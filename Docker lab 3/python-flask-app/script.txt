@@ -14,9 +14,15 @@ db:
 
 
 1) Запуск: 
-docker compose up -d
+
+
+Основаня команда - docker compose up --build. После нее все работает
+
+docker compose down --remove-orphans - если заняты порты
 
 docker build -t app .
+
+-- Если другое не работает, но это запускает другой контейнре отдельно 
 
 docker compose run -p 5000:5000 app - чтобы запустить сайт с добавлением записей http://127.0.0.1:5000
 
